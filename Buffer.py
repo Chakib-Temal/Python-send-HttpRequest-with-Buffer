@@ -1,6 +1,5 @@
 #Created by TEMAL Chakib macbookpro on 11/12/2018.
 
-
 from urllib.request import urlopen
 import datetime
 import time
@@ -22,7 +21,7 @@ def sendToServerInTime() :
             st = 77
             var1 = 145003
             urlString = "http://www.mmi.iutmulhouse.uha.fr/einsert.php?id=" \
-                        + str(id) + "&dt" + dt + "&nc" + str(nc) + "&st" + str(st) + "&var1" + str(var1)
+                        + str(id) + "&dt=" + dt + "&nc=" + str(nc) + "&st=" + str(st) + "&var1=" + str(var1)
 
             urlopen(urlString)
             print("TH1 sended : " + urlString)
